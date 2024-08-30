@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="details.css">
     <link rel="icon" href="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
-<body>
-    <nav>
+<body class="animate__animated animate__fadeIn">
+    <nav class="animate__animated animate__bounceIn">
         <a href="../index.html"><div class="logo">
             <img src="https://aayusharyan.github.io/cryptoview-project/assets/images/logo.png" alt="Cryptoview Logo">
             <h1>CryptoView</h1>
@@ -18,30 +22,32 @@
             <button id="searchBtn">Search</button>
         </div>
     </nav>
-    <div class="details-cont">
-        <div class="details-logo">
-            <img id="logo" alt="">
-        </div>
-        <div class="details-info">
-            <div class="price-range">
-                <h2 id="crypto-name"></h2>
-                <div class="price-range-value">
-                    <p id="rupee"></p>
-                    <p id="dollar"></p>
-                    <p id="euro"></p>
-                    <p id="pound"></p>
+    <main>
+        <div class="details-cont animate__animated animate__fadeInDown">
+            <div class="details-logo">
+                <img id="logo" alt="">
+            </div>
+            <div class="details-info">
+                <div class="price-range">
+                    <h2 id="crypto-name"></h2>
+                    <div class="price-range-value">
+                        <p id="rupee"></p>
+                        <p id="dollar"></p>
+                        <p id="euro"></p>
+                        <p id="pound"></p>
+                    </div>
+                </div>
+                <div class="descrip">
+                    <h3>Description:</h3>
+                    <p class="animate__animated animate__zoomIn" id="description"></p>
                 </div>
             </div>
-            <div class="descrip">
-                <h3>Description:</h3>
-                <p id="description"></p>
-            </div>
         </div>
-    </div>
-    <div class="history">
-        <h2>Price history</h2>
-    </div>
-    <footer>
+        <div class="history">
+            <h2>Price history</h2>
+        </div>    
+    </main>
+        <footer>
         <p>&copy; 2021 Cryptoview. All rights reserved.</p>
             <a href="https://github.com/kunalmittal01/cryptoView"><img src="https://aayusharyan.github.io/cryptoview-project/assets/images/github_logo.png" alt=""></a>
     </footer>

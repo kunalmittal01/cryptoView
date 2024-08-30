@@ -9,12 +9,10 @@ form.addEventListener('submit', (e) => {
 
 async function displaySearchResults(query) {
     loader.style.display = 'none';
-    disp.innerHTML = ''; 
     let resp = await fetch(`https://api.coingecko.com/api/v3/search?query=${query}`)
     let data = await resp.json();
     data.coins.forEach((coin,num) => {
         let div = document.createElement('div');
-        div.classList.add('coin-card');
         div.innerHTML = `
             <div class="name">
                 <span>${num + 1}</span>
@@ -25,6 +23,7 @@ async function displaySearchResults(query) {
                 <button class="more-btn" onclick="showDetails('${coin.id}')">More Info</button>
             </div>
             `
+            div.classList.add('coin-card','animate__animated','animate__rotateIn');
             disp.appendChild(div);
     })
     if(disp.innerHTML == '') {
@@ -34,6 +33,7 @@ async function displaySearchResults(query) {
 
 btn.addEventListener('click', async(e) => {
     let query = searchbox.value;
+    disp.innerHTML = ''; 
     loader.style.display = 'flex';
     debounce(displaySearchResults,1100)
 });

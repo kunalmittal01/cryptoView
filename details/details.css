@@ -20,6 +20,10 @@ body {
     
 }
 
+main {
+    min-height: 58vh;
+}
+
 .details-cont .price-range {
     display: flex;
     flex-direction: column;
