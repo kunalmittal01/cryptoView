@@ -1,0 +1,65 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.details-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 5rem 0;
+}
+
+.price-range h2, .history{
+    color: #FCA311;
+}
+
+.details-cont .details-logo img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.details-cont .price-range {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.descrip {
+    width: 90%;
+}
+
+.descrip p{
+    line-break: auto;
+    line-height: 1.5rem;
+    word-spacing: 1px;
+}
+
+.details-cont .price-range .price-range-value{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.details-info  {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.history {
+    margin-left: 2rem;
+}
+
+footer {
+    margin-top: 7%;
+}
+
+@media screen and (max-width: 460px){
+    .details-cont {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
